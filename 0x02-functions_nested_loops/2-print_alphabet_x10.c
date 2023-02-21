@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * Main - A function that prints alphabet x10
- * Return 0 (Success)
+ * Main - print_alphabet_x10 function that prints alphabet 10 time
  */
 void print_alphbet_x10(void)
 {
-	char (i, c);
-	for (i = 10; i <=10, i++)
+	int (i);
+	char (c);
+	for (i = 10; i <= 10)
 	{
-        	for (c = 'a'; c <= 'z'; c++)
-        	{
-        	_putchar(i, c);
-        	}
-        	_putchar('\n');
+		for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
+		_putchar('\n');
 	}
 }

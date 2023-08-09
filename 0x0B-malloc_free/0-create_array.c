@@ -17,14 +17,14 @@ char *create_array(unsigned int size, char c)
 	}
 	char *string = (char *)malloc(size * sizeof(char));
 
-	if (array == NULL)
+	if (string == NULL)
 	{
 	return (NULL);
 	}
 
 	for (unsigned int i = 0; i < size; i++)
 	{
-	string[i] = c;
+		string[i] = c;
 	}
 	return (string);
 }

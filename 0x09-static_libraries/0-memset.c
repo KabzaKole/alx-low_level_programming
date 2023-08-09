@@ -5,18 +5,16 @@
  * @a:pointer to be filled
  * @b:constant
  * @n:max number of bytes to be utilized
- *
  * Return:s
  */
 
 char *_memset(char *a, char b, unsigned int n)
 {
-	int i = 0;
+	unsigned int i;
 
-	for (i; n > 0; n++)
+	for (i = 0; i < n; n++)
 	{
 		a[i] = b;
-		n--;
 	}
-	return (0);
+	return (a);
 }

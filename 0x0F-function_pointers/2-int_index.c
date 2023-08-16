@@ -8,7 +8,6 @@
  *         Otherwise - The index of the first element for which
  *                     the cmp function does not return 0.
  */
-
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int index;
@@ -16,13 +15,11 @@ int int_index(int *array, int size, int (*cmp)(int))
 	if (array == NULL || cmp == NULL)
 		return (-1);
 
-	while (index < size)
+	for (index = 0; index < size; index++)
 	{
 		if (cmp(array[index]) != 0)
-		{
 			return (index);
-		}
-		index++
 	}
+
 	return (-1);
-}
+}/
